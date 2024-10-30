@@ -1,0 +1,108 @@
+.contactComponent {
+  width: 60px;
+  min-width: 60px;
+  height: 180px;
+  background: #ffffff;
+  box-shadow: 0px 6px 8px 1px rgba(0, 0, 0, 0.17);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 70vh;
+  right: 0;
+  .contact-item {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    &-phone {
+      width: 150px;
+      height: 60px;
+      background: #ffffff;
+      box-shadow: 0px 6px 8px 1px rgba(0, 0, 0, 0.17);
+      border-radius: 6px;
+      position: absolute;
+      right: 75px;
+      font-family: Source Han Sans SC;
+      font-weight: 400;
+      font-size: 16px;
+      color: #333333;
+      display: none;
+    }
+    &-phone::after {
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 12px solid #fff; //那边底
+      border-bottom: 12px solid transparent;
+      border-top: 12px solid transparent;
+      right: -11px;
+      top: 15px;
+    }
+    &-wx {
+      width: 150px;
+      height: 160px;
+      background: #ffffff;
+      box-shadow: 0px 6px 8px 1px rgba(0, 0, 0, 0.17);
+      border-radius: 6px;
+      position: absolute;
+      right: 75px;
+      top: 0px;
+      display: none;
+
+      .code {
+        width: 93px;
+        height: 94px;
+        margin-bottom: 15px;
+      }
+      > span {
+        font-family: Source Han Sans SC;
+        font-weight: 400;
+        font-size: 14px;
+        color: #333333;
+      }
+    }
+    &-wx::after {
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 12px solid #fff; //那边底
+      border-bottom: 12px solid transparent;
+      border-top: 12px solid transparent;
+      right: -11px;
+      top: 15px;
+    }
+  }
+  .top:hover {
+    color: #fff;
+    background: #d00202;
+  }
+  .phone:hover {
+    color: #fff;
+    background: #d00202;
+    .contact-item-phone {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .wx:hover {
+    color: #fff;
+    background: #d00202;
+    .contact-item-wx {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .phone {
+    border-top: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+  }
+}

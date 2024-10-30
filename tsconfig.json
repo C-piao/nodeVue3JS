@@ -1,0 +1,59 @@
+// 配置文件，用于配置typescript
+{
+  "compilerOptions": {
+    // 生成代码的语言版本：将我们写的 TS 代码编译成哪个版本的 JS 代码
+    // ESNext 是一个动态的概念
+    "target": "esnext",
+    // 生成代码的模块化标准
+    "module": "esnext",
+    // 模块解析（查找）策略
+    "moduleResolution": "node",
+    "useDefineForClassFields": true,
+    // 开启严格模式
+    "strict": true,
+    "noLib": false,
+    // 对文件名称强制区分大小写
+    "forceConsistentCasingInFileNames": true,
+    // 允许通过 import x from 'y' 即使模块没有显式指定 default 导出
+    "allowSyntheticDefaultImports": true,
+    "strictFunctionTypes": false,
+    // 指定将 JSX 编译成什么形式
+    "jsx": "preserve",
+    "baseUrl": ".",
+    // 允许 ts 编译器编译 js 文件
+    "allowJs": true,
+    "sourceMap": true,
+    // es 模块 互操作，屏蔽 ESModule 和 CommonJS 之间的差异
+    "esModuleInterop": true,
+    // 允许导入扩展名为.json的模块
+    "resolveJsonModule": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "experimentalDecorators": true,
+    // 指定要包含在编译中的 library
+    "lib": ["dom", "esnext"],
+    "noImplicitAny": false,
+    // 跳过类型声明文件的类型检查
+    "skipLibCheck": true,
+    "types": ["element-plus/global", "naive-ui/volar"],
+    "removeComments": true,
+    "paths": {
+      "/@/*": ["src/*"],
+      "/#/*": ["types/*"]
+    }
+  },
+  // 指定允许 ts 处理的目录
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "types/**/*.d.ts",
+    "types/**/*.ts",
+    "build/**/*.ts",
+    "build/**/*.d.ts",
+    "mock/**/*.ts",
+    "vite.config.ts"
+  ],
+  "exclude": ["node_modules", "tests/server/**/*.ts", "dist", "**/*.js"]
+}

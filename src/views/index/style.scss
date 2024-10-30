@@ -1,0 +1,248 @@
+.index-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .banner {
+    > img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+
+  .menu {
+    margin: -20px 0 150px;
+    box-shadow: 7px 10px 15px 1px rgb(0 0 0 / 45%);
+
+    &-item {
+      width: 288px;
+      background: #fff;
+      padding: 31px 13px 13px;
+
+      &-logo {
+        width: 60px;
+        height: 60px;
+
+        > img {
+          width: 100%;
+        }
+      }
+
+      &-label {
+        margin: 23px auto 16px;
+        font-weight: 400;
+        font-size: 22px;
+        color: #333;
+      }
+
+      &-value {
+        flex: 1;
+        font-weight: normal;
+        font-size: 13px;
+        color: #999;
+      }
+    }
+
+    &-item:first-child {
+      background: #0f3d96;
+
+      .menu-item-value {
+        color: #fff;
+      }
+    }
+
+    &-item:nth-child(even) {
+      border-left: 1px solid #f1f1f1;
+      border-right: 1px solid #f1f1f1;
+    }
+  }
+
+  .service {
+    width: 100%;
+    height: 721px;
+
+    &-img {
+      min-width: 967px;
+      width: 967px;
+      overflow: hidden;
+
+      > img {
+        width: 100%;
+      }
+    }
+
+    &-container {
+      padding-right: 346px;
+      .stitle-zh {
+        font-weight: 400;
+        font-size: 34px;
+        color: #333;
+      }
+
+      .stitle-en {
+        font-weight: 400;
+        font-size: 30px;
+        color: #999;
+      }
+
+      .scontent-label {
+        font-weight: 400;
+        font-size: 24px;
+        color: #666;
+      }
+
+      .scontent-value {
+        font-weight: 400;
+        font-size: 14px;
+        color: #999;
+        line-height: 36px;
+      }
+
+      .stab {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 162px;
+
+        &-item {
+          &-value {
+            font-weight: bold;
+            font-size: 36px;
+            color: #365883;
+          }
+
+          &-label {
+            font-weight: 400;
+            font-size: 16px;
+            color: #333;
+          }
+        }
+      }
+
+      .stip {
+        font-weight: 400;
+        font-size: 30px;
+        color: #333;
+      }
+
+      .sbtn {
+        width: 142px;
+        height: 50px;
+        border-radius: 25px;
+        border: 1px solid #d00202;
+        font-weight: 400;
+        font-size: 16px;
+        color: #d00202;
+      }
+    }
+  }
+
+  .project {
+    width: 100%;
+    background: url('https://oss.ihaier.vip/minipro/nuxt/sbg.png');
+    background-size: cover; /* 背景图片覆盖整个元素 */
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding: 64px 59px 133px;
+
+    &-title {
+      margin-bottom: 106px;
+      font-weight: 300;
+
+      .title {
+        font-weight: 500;
+        font-size: 42px;
+        color: #365883;
+        padding: 0 15px;
+      }
+    }
+
+    &-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 63px 33px;
+
+      .project-item {
+        background: #fff;
+        border-radius: 30px;
+        padding: 11px 22px;
+
+        &-label {
+          font-weight: 500;
+          font-size: 25px;
+          color: #272626;
+          height: 70px;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: normal;
+        }
+
+        &-value {
+          font-weight: 400;
+          font-size: 14px;
+          color: #303030;
+          line-height: 27px;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: normal;
+        }
+      }
+    }
+  }
+
+  .enterprises {
+    padding: 132px 136px;
+
+    &-text {
+      width: 491px;
+      margin-right: 86px;
+
+      .etitle-zh {
+        font-weight: bold;
+        font-size: 50px;
+        color: #313131;
+      }
+
+      .etitle-en {
+        font-weight: bold;
+        font-size: 26px;
+        color: #565555;
+      }
+
+      .eintro {
+        font-weight: 400;
+        font-size: 25px;
+        color: #565555;
+        line-height: 58px;
+        margin: 50px 0 41px;
+      }
+
+      .ebtn {
+        width: 248px;
+        height: 46px;
+        background: #0f3e96;
+        border-radius: 23px;
+        font-weight: 400;
+        font-size: 25px;
+        color: #fff;
+        line-height: 46px;
+        text-align: center;
+      }
+    }
+
+    &-logo {
+      width: 1063px;
+
+      > img {
+        width: 100%;
+      }
+    }
+  }
+}

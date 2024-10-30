@@ -1,0 +1,33 @@
+.about-info {
+  width: 100%;
+  padding: 0 263px;
+
+  > span {
+    font-weight: 400;
+    font-size: 25px;
+    color: #686565;
+    line-height: 68px;
+  }
+
+  &-img {
+    width: 80%;
+    margin: 0 auto;
+    > img {
+      width: 100%;
+    }
+  }
+
+  &-address {
+    width: 100%;
+    margin-top: -200px;
+    margin-bottom: 77px;
+
+    > span {
+      font-weight: bold;
+      font-size: 25px;
+      color: #686565;
+      line-height: 68px;
+      display: block;
+    }
+  }
+}

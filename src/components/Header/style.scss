@@ -1,0 +1,36 @@
+.header {
+  height: 57px;
+  background-color: rgb(255 255 255 / 70%);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+
+  &-logo {
+    > img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  &-container {
+    .hitem {
+      font-weight: bold;
+      font-size: 20px;
+      color: #303030;
+    }
+
+    .mobile {
+      font-weight: bold;
+      font-size: 20px;
+      color: #103d97;
+
+      > img {
+        width: 24px;
+        height: 25px;
+        margin-right: 5px;
+      }
+    }
+  }
+}

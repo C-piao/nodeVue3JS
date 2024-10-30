@@ -1,0 +1,49 @@
+.team {
+  .manager {
+    max-width: 100%;
+    margin-bottom: 169px;
+
+    &-icon {
+      width: 219px;
+      margin-right: 160px;
+    }
+
+    &-item {
+      width: 570px;
+      margin-left: -210px;
+    }
+  }
+
+  .contact {
+    width: 100%;
+
+    &-title {
+      width: 568px;
+      margin-bottom: 89px;
+    }
+
+    &-content {
+      width: 100%;
+
+      .contact-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 200px;
+
+        &-img {
+          width: 450px;
+        }
+
+        &-img:nth-child(odd) {
+          margin-top: -120px;
+          margin-left: -170px;
+        }
+
+        &-img:nth-child(even) {
+          margin-left: -215px;
+        }
+      }
+    }
+  }
+}
